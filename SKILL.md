@@ -1,5 +1,5 @@
 ---
-name: coolify-management
+name: coolify
 description: Coolify v4 — service management, deployment, environment variables, Docker Compose, Traefik routing, health monitoring, and MCP integration. Auto-triggers on Coolify, service deployment, server management, and Traefik routing tasks.
 disable-model-invocation: false
 user-invocable: true
