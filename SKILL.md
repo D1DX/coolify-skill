@@ -196,7 +196,6 @@ For services linked to a git repo:
 5. **Let's Encrypt rate limits** — too many cert requests (>5/week for same domain) get rate-limited.
 6. **Docker volume persistence** — data persists in named volumes across deploys but NOT across server rebuilds.
 7. **No database backups** — critical gap. PostgreSQL data for n8n and Chatwoot has no backup schedule.
-
 9. **Database version EOL** — Chatwoot's PostgreSQL is end-of-life. Upgrade needed.
 10. **Coolify updates** — update Coolify itself carefully. Test in off-hours, have rollback plan.
 
