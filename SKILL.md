@@ -176,26 +176,13 @@ For services linked to a git repo:
 
 ---
 
-## 7. Backup Considerations
+## 7. Critical Gotchas
 
-**Currently missing (known issue):**
-- No automated backups for n8n database
-- No automated backups for Chatwoot database
-- Session data in Docker volume (no backup)
-
-**Recommendation:** Set up `pg_dump` cron job + R2 upload for critical databases.
-
----
-
-## 8. Critical Gotchas
-
-1. **limited RAM, no swap configured** — OOM kills are real. Always set memory limits on services.
-2. **Self-hosted server** — all services on one instance means resource contention is frequent.
-3. **Coolify UI is the source of truth** — env vars and compose config live in Coolify, not in git.
-4. **Traefik labels auto-generated** — don't manually set Traefik labels in compose files used with Coolify.
-5. **Let's Encrypt rate limits** — too many cert requests (>5/week for same domain) get rate-limited.
-6. **Docker volume persistence** — data persists in named volumes across deploys but NOT across server rebuilds.
-7. **No database backups** — critical gap. PostgreSQL data for n8n and Chatwoot has no backup schedule.
-9. **Database version EOL** — Chatwoot's PostgreSQL is end-of-life. Upgrade needed.
-10. **Coolify updates** — update Coolify itself carefully. Test in off-hours, have rollback plan.
+1. **Set memory limits** — always set memory limits on services to prevent OOM kills.
+2. **Coolify UI is the source of truth** — env vars and compose config live in Coolify, not in git.
+3. **Traefik labels auto-generated** — don't manually set Traefik labels in compose files used with Coolify.
+4. **Let's Encrypt rate limits** — too many cert requests (>5/week for same domain) get rate-limited.
+5. **Docker volume persistence** — data persists in named volumes across deploys but NOT across server rebuilds.
+6. **Back up databases** — PostgreSQL and other stateful services need scheduled `pg_dump` or equivalent.
+7. **Coolify updates** — update Coolify itself carefully. Test in off-hours, have rollback plan.
 
