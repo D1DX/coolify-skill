@@ -2,7 +2,7 @@
 name: coolify
 description: Coolify v4 — MCP operations, service management, deployment, environment variables, Docker Compose, Traefik routing, artisan tinker for MCP gaps, project/environment organization, health monitoring, and troubleshooting. Auto-triggers on Coolify, service management, deployment, server management, Traefik routing, and project organization tasks.
 disable-model-invocation: false
-user-invocable: true
+user-invokable: true
 argument-hint: "task description"
 ---
 
@@ -10,7 +10,7 @@ argument-hint: "task description"
 
 Complete reference for managing services on Coolify v4.
 
-**As of April 2026.** Coolify v4 (self-hosted PaaS).
+Coolify v4 (self-hosted PaaS).
 
 ---
 

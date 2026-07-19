@@ -53,7 +53,7 @@ coolify-skill/
 
 ## Sources
 
-Distilled from operating a Coolify v4 instance on AWS EC2 Frankfurt — managing 16+ resources across 10 projects including n8n, Chatwoot, OpenClaw, WAHA, and custom services. Covers patterns learned through production deployments, incident response, MCP gap discovery, artisan tinker workarounds, and Traefik/DNS integration with Cloudflare.
+Distilled from operating a production Coolify v4 instance managing many resources across multiple projects and service types. Covers patterns learned through production deployments, incident response, MCP gap discovery, artisan tinker workarounds, and Traefik/DNS integration with Cloudflare.
 
 ## Credits
 
